@@ -31,7 +31,7 @@ const ModeSwitcher = styled.div`
     text-transform: capitalize;
 `;
 
-export const Header = props => {
+export const Header = () => {
     const [theme, setTheme] = useState('light');
     const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
     useEffect(() => {
