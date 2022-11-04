@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { Container } from './Container';
 
 const Wrapper = styled.main`
-    padding: 2rem 0;
+    padding: 6rem 0 2rem;
     @media (min-width: 767px) {
-        padding: 4rem 0;
+        padding: 7rem 0 4rem;
     } ;
 `;
 

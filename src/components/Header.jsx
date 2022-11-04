@@ -6,6 +6,10 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 const HeaderEl = styled.header`
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 2;
     box-shadow: var(--shadow);
     background-color: var(--colors-ui-base);
 `;
