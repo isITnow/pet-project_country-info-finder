@@ -12,6 +12,7 @@ export const CustomSelect = styled(Select).attrs({
             border: 'none',
             boxShadow: 'var(--shadow)',
             height: '50px',
+            cursor: 'pointer',
         }),
         option: (provided, state) => ({
             ...provided,
