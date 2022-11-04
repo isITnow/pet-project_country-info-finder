@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import axios from 'axios';
 import { Controls } from 'components/Controls';
 import { Card } from 'components/Card';
