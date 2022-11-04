@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/pet-project_country-info-finder/static/css/main.285b91d3.css",
-    "main.js": "/pet-project_country-info-finder/static/js/main.15456f70.js",
+    "main.js": "/pet-project_country-info-finder/static/js/main.f9246672.js",
     "index.html": "/pet-project_country-info-finder/index.html",
     "main.285b91d3.css.map": "/pet-project_country-info-finder/static/css/main.285b91d3.css.map",
-    "main.15456f70.js.map": "/pet-project_country-info-finder/static/js/main.15456f70.js.map"
+    "main.f9246672.js.map": "/pet-project_country-info-finder/static/js/main.f9246672.js.map"
   },
   "entrypoints": [
     "static/css/main.285b91d3.css",
-    "static/js/main.15456f70.js"
+    "static/js/main.f9246672.js"
   ]
 }
