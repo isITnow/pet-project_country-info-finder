@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Controls } from 'components/Controls';
 import { Card } from 'components/Card';
@@ -8,6 +8,23 @@ import { useNavigate } from 'react-router-dom';
 
 export const HomePage = ({ countries, setCountries }) => {
     const navigate = useNavigate();
+    const [filteredCountries, setFilteredCountries] = useState(countries);
+
+    const handleSearch = (search, region) => {
+        let data = [...countries];
+
+        if (region) {
+            data = data.filter(c => c.region.includes(region));
+        }
+
+        if (search) {
+            data = data.filter(c =>
+                c.name.toLowerCase().includes(search.toLowerCase())
+            );
+        }
+
+        setFilteredCountries(data);
+    };
 
     useEffect(() => {
         if (!countries.length) {
@@ -17,9 +34,9 @@ export const HomePage = ({ countries, setCountries }) => {
     }, []);
     return (
         <>
-            <Controls />
+            <Controls onSearch={handleSearch} />
             <List>
-                {countries.map(c => {
+                {filteredCountries.map(c => {
                     const countryInfo = {
                         name: c.name,
                         img: c.flags.png,
